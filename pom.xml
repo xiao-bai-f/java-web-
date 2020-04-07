@@ -1,0 +1,144 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>springboot</groupId>
+  <artifactId>Gttss</artifactId>
+  <packaging>jar</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Gttss Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <!-- 添加spring boot的依赖 -->
+  <parent>
+  	<groupId>org.springframework.boot</groupId>
+  	<artifactId>spring-boot-starter-parent</artifactId>
+  	<version>2.0.1.RELEASE</version>
+  </parent>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <!--
+    <dependency>
+    	<groupId>org.springframework.boot</groupId>
+    	<artifactId>spring-boot-starter-web</artifactId>
+    </dependency> -->
+    <!-- springboot的热部署，修改代码不用重启 -->
+    <dependency>
+    	<groupId>org.springframework.boot</groupId>
+    	<artifactId>spring-boot-devtools</artifactId>
+    	<optional>true</optional>
+    </dependency>
+    <!-- mybatis配置 -->
+    <dependency>
+    	<groupId>org.mybatis.spring.boot</groupId>
+    	<artifactId>mybatis-spring-boot-starter</artifactId>
+    	<version>1.1.1</version>
+    </dependency>
+    <!-- 数据库的连接驱动 -->
+    <dependency>
+    	<groupId>mysql</groupId>
+    	<artifactId>mysql-connector-java</artifactId>
+    </dependency>
+    <!-- aop相关依赖 -->
+    <dependency>
+    	<groupId>org.springframework.boot</groupId>
+    	<artifactId>spring-boot-starter-aop</artifactId>
+    </dependency>
+    <!-- aspectj包 -->
+    <dependency>
+    	<groupId>org.aspectj</groupId>
+    	<artifactId>aspectjrt</artifactId>
+    	<version>1.6.11</version>
+    </dependency>
+        <dependency>	
+    	<groupId>cglib</groupId>
+    	<artifactId>cglib</artifactId>
+    	<version>2.1</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-aop</artifactId>
+    	<version>4.3.9.RELEASE</version>
+    </dependency>
+    <!-- 引入aop依赖结束 -->
+    <!-- 添加jsp依赖 -->
+    <dependency>
+    	<groupId>org.springframework.boot</groupId>
+    	<artifactId>spring-boot-starter-tomcat</artifactId>
+    </dependency>
+    <dependency>
+    	<groupId>org.apache.tomcat.embed</groupId>
+    	<artifactId>tomcat-embed-jasper</artifactId>
+    </dependency>
+    
+    <!--引入jsp标签集合jar-->
+	<dependency>
+  		<groupId>jstl</groupId>
+  		<artifactId>jstl</artifactId>
+  		<version>1.2</version>
+	</dependency>
+	<dependency>
+		<groupId>taglibs</groupId>
+		<artifactId>standard</artifactId>
+		<version>1.1.2</version>
+	</dependency>
+	<!-- javaeeapi接口包 
+	<dependency>
+		<groupId>javax</groupId>
+		<artifactId>javaee-api</artifactId>
+		<version>7.0</version>
+		<scope>provided</scope>
+	</dependency> -->
+	<!-- 引入websocket依赖包 -->
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-websocket</artifactId>
+        <version>1.4.0.RELEASE</version>
+	</dependency>
+	<!-- 引入dwr包，实现前后端直接交互 -->
+	<dependency>
+		<groupId>org.directwebremoting</groupId>
+		<artifactId>dwr</artifactId>
+		<version>3.0.2-RELEASE</version>
+	</dependency>
+	<!-- bootstrap 和 jquery -->
+	<dependency>
+	  <groupId>org.webjars</groupId>
+	  <artifactId>jquery</artifactId>
+	  <version>3.4.1</version>
+  </dependency>
+
+	  <dependency>
+		  <groupId>org.webjars</groupId>
+		  <artifactId>bootstrap</artifactId>
+		  <version>3.3.7</version>
+	  </dependency>
+
+	  <!-- https://mvnrepository.com/artifact/org.webjars/webjars-locator -->
+	  <dependency>
+		  <groupId>org.webjars</groupId>
+		  <artifactId>webjars-locator</artifactId>
+		  <version>0.32</version>
+	  </dependency>
+
+	<!-- 文件上传的jar包-->
+	<dependency>  
+         <groupId>org.springframework.boot</groupId>  
+         <artifactId>spring-boot-starter-thymeleaf</artifactId>  
+        </dependency>
+  </dependencies>
+  <build>
+    <finalName>Gttss</finalName>
+	   <!--<resources>-->
+		  <!--<resource>-->
+			  <!--<directory>src/main/java</directory>-->
+			  <!--<includes>-->
+				  <!--<include>**/*.xml</include>-->
+			  <!--</includes>-->
+		  <!--</resource>-->
+	  <!--</resources>-->
+  </build>
+</project>

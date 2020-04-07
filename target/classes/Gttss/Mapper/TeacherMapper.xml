@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="Gttss.Mapper.TeacherMapper">
+    <select id="findTeacher" resultType="Teacher">
+        select * from t_teacher 
+    </select>
+    <!-- 通过教师编号查询教师信息 -->
+    <select id="findTeacherById" parameterType="String" resultMap="teacher_to_college">
+        select * from t_teacher where teacherId = #{teacherId}
+    </select>
+    <!-- 教师信息，映射结果 -->
+    <resultMap type="Teacher" id="teacher_to_college">
+    	<id property="teacherId" column="teacherId"/>
+    	<result property="teacherName" column="teacherName"/>
+    	<collection property="collegeList" ofType="College" column="teacherId" select="findCollegeByTeacherId" /> 
+    </resultMap>
+    
+    <!-- 通过教师编号查询教师学院信息  关系多对多-->
+    <select id="findCollegeByTeacherId" parameterType="String" resultType="College">
+    	select t_college.* 
+    		from t_college,t_teacher_college 
+    		where t_college.collegeId = t_teacher_college.collegeId 
+    			and t_teacher_college.teacherId = #{teacherId} 
+    </select>
+
+
+    
+    <!-- 登陆查询 -->
+    <select id="TeacherLogin" parameterType="String" resultType="Teacher">
+    	select * from t_teacherLogin where teacherId = #{teacherId} and teacherPassword = #{teacherPwd}
+    </select>
+    <!-- 插入试题 -->
+    <insert id="addTopic" parameterType="Topic" flushCache="true">
+    	insert into t_topic
+    		(topicId,topicName,teacherName,topicDesc,topicRequier,schoolId,publishTime)
+    	 	values (#{topicId},#{topicName},#{teacherName},#{topicDesc},#{topicRequier},#{schoolId},#{currentTime})
+    </insert>
+    <insert id="addTeacherTopic" parameterType="Topic" flushCache="true">
+    	insert into t_teacher_topic 
+    		(topicId,teacherId,schoolId) 
+    		values(#{topicId},#{teacherId},#{schoolId})
+    </insert>
+
+    <!-- 查找所有试题 -->
+    <select id="findTopicByTeacherId" parameterType="String" resultMap="teacher_to_topic">
+    	select t_topic.* from t_topic,t_teacher_topic where
+    	 t_topic.topicId = t_teacher_topic.topicId and t_teacher_topic.teacherId = #{teacherId} 
+    </select>
+   	<resultMap type="Topic" id="teacher_to_topic">
+   		<id property="topicId" column="topicId"/>
+   		<result property="topicName" column="topicName"/>
+   		<collection property="topicList" ofType="Topic"/>
+   	</resultMap>
+   	
+    <!-- 根据老师的id和所在学院信息，查看学生选题情况 -->
+		<!-- 查找教师所在院系的所有专业 -->
+	<select id="findStudentByCollegeId" parameterType="String" resultMap="collegeId_to_majorId">
+		select majorId
+			from t_major
+			where collegeId = #{collegeId} 
+	</select>
+		<!-- 通过教师所在院系和专业名称查找专业 -->
+	<select id="findMajorByCollegeIdAndMajorName" parameterType="String" resultMap="collegeId_to_majorId">
+		select majorId
+			from t_major
+			where collegeId = #{collegeId} and majorName =#{majorName}
+	</select>
+	<!-- 学院id映射专业id  一对多-->
+	<resultMap type="Major" id="collegeId_to_majorId">
+		<id property="majorId" column="majorId"/>
+		<collection property="classesList" column="majorId" 
+			ofType="Classes" select="findClassByMajorId"/>
+	</resultMap>
+
+		<!-- 查找专业内所有班级  一对多 -->
+	<select id="findClassByMajorId" parameterType="String" resultMap="majorId_to_classId" >
+		select classId
+			from t_class_major
+			where majorId = #{majorId}
+	</select>
+	
+		<!-- 查找专业所在的班级-->
+		<select id="findClassByMajorIdAndClassId" parameterType="String"   resultMap="majorId_to_classId" >
+			select t_class.classId
+				from  t_class,t_class_major
+				where t_class_major.majorId = #{majorId}
+					and t_class.classId = t_class_major.classId 
+					and t_class.classId = #{classId} 
+		</select>
+		<!-- 专业id映射班级id 一对多 -->
+	<resultMap type="Classes" id="majorId_to_classId">
+		<id property="classId" column="classId"/>
+		<collection property="studentList" column="classId" ofType="Student" select="findStudentByClassId"/>
+	</resultMap>
+		<!-- 查找班级内的所有学生 -->
+	<select id="findStudentByClassId" parameterType="String" resultType="Student">
+		select t_student.*
+			from t_student_class,t_student
+			where t_student.studentId = t_student_class.studentId and classId = #{classId} 
+	</select>
+	
+	<select id="findStudentByClassIdAndStudentName" parameterType="String" resultType="Student">
+		select t_student.* 
+			from t_student,t_student_class
+				where t_student_class.classId =  #{classId}
+					and t_student_class.studentId = t_student.studentId
+					and	t_student.studentName LIKE CONCAT(CONCAT('%',#{studentName}),'%') 
+	</select>
+	<select id="findStudentByClassIdAndStudentId" parameterType="String" resultType="Student">
+		select t_student.* 
+			from t_student,t_student_class
+				where t_student_class.classId =  #{classId}
+					and t_student_class.studentId = t_student.studentId
+					and	t_student.studentId = #{studentId} 
+	</select>
+    	<!-- 按照学生是否已选择试题--> 
+    <select id="findStudentByIsTopic" parameterType="String" resultMap="topic_to_student">
+		select t_student.* from t_student_topic,t_student 
+			where t_student.studentId = t_student_topic.studentId  and t_student_topic.topicId = #{topicId}
+    </select>
+    <resultMap type="Student" id="topic_to_student">
+    	<id property="studentId" column="studentId"/>
+    	<result property="studentName" column="studentName"/>
+    	<!-- 其他元素待增加 -->
+    	<collection property="studentList" ofType="Student"/>
+    </resultMap>
+</mapper> 

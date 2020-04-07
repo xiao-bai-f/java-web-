@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="Gttss.Mapper.StudentMapper">
+	<!-- 学生登录查询 -->
+	<select id="StudentLogin" parameterType="String" resultType="Student">
+		select * from t_studentlogin 
+			where studentId = #{studentId} and studentpassword = #{studentPwd} and islogin="no"
+	</select>
+	
+	<!-- 设置登录账号不能重复登录 -->
+	<!--  <update id="setLogin">
+
+	</update> -->
+	
+	<!-- 根据登录id确定学生信息 -->
+	<select id="findStudentById" parameterType="String" resultMap="studentId_to_class">
+		select * from t_student where studentId =#{studentId}
+	</select>
+		<resultMap type="Student" id="studentId_to_class">
+			<id property="studentId" column="studentId"/>
+			<result property="studentName" column="studentName"/>
+			<result property="studentAge" column="studentAge"/>
+			<result property="studentSex" column="studentSex"/>
+			<result property="studentEducation" column="studentEducation"/>
+			<result property="studentEmail" column="studentEmail"/>
+			<result property="studentTel" column="studentTel"/>
+			<result property="studentAddress" column="studentAddress"/>
+			<result property="schoolId" column="schoolId"/>
+			<result property="isTopic" column="isTopic"/>
+			<!-- <association property="classes" javaType="Classes" column="studentId" select="findClassByStudentId"></association>
+		 --> </resultMap>
+		
+	<select id="findClassByStduentId" parameterType="String" resultMap="classId_to_major">
+		select t_class.* from t_class,t_student_class
+			where t_student_class.studentId = #{studentId} 
+				 and t_class.classId = t_student_class.classId
+	</select>
+	
+	<resultMap type="Classes" id="classId_to_major">
+		<id property="classId" column="classId"/>
+		<!--<association property="major" javaType="Major" column="classId" select="Gttss.Mapper.StudentMapper.findMajorByClassId"></association>
+	--></resultMap>
+	
+	<select id="findMajorByClassId" parameterType="String" resultMap="majorId_to_college">
+		select t_major.* from t_major,t_class_major
+			where t_major.majorId = t_class_major.majorId
+				and t_class_major.classId = #{classId}
+	</select>
+	
+	<resultMap type="Major" id="majorId_to_college">
+		<id property="majorId" column="majorId"/>
+		<result property="majorName" column="majorName"/>
+		<!--<association property="college" javaType="College" column="majorId" select="Gttss.Mapper.StudentMapper.findCollegeByMajorId"/>
+	--></resultMap>
+	
+	<select id="findCollegeByMajorId" parameterType="String" resultType="College">
+		select t_college.* from t_college,t_major
+		 where t_college.collegeId = t_major.collegeId
+		 	and t_major.majorId = #{majorId}
+	</select>
+	
+	<select id="findTeacherByCollegeId" parameterType="String" resultMap="teacherId_to_topic">
+		select t_teacher.* from t_teacher ,t_teacher_college
+			where t_teacher.teacherId = t_teacher_college.teacherId
+				and t_teacher_college.collegeId = #{collegeId}
+	</select>
+	
+	<resultMap type="Teacher" id="teacherId_to_topic">
+		<id property="teacherId" column="teacherId"/>
+		<result property="teacherName" column="teacherName"/>
+		<collection property="topicList" ofType="Topic" column="teacherId" select="findTopicByTeacherId"/>
+	</resultMap>
+	
+	<select id="findTopicByTeacherId" parameterType="String" resultType="Topic">
+		select t_topic.* from t_topic,t_teacher_topic
+			where t_topic.topicId = t_teacher_topic.topicId
+				and t_teacher_topic.teacherId = #{teacherId}
+	</select>
+	
+	<select id="findTopicByStudentId" parameterType="String" resultMap="topicId_to_teacher">
+		select t_topic.* from t_topic,t_student_topic
+			where t_topic.topicId = t_student_topic.topicId
+				and t_student_topic.studentId = #{studentId}
+	</select>
+	
+	<resultMap type="Topic" id="topicId_to_teacher">
+		<id property="topicId" column="topicId"/>
+		<result property="topicName" column="topicName"/>
+		<result property="topicRequier" column="topicRequier"/>
+		<result property="isSelected" column="isSelected"/>
+	</resultMap>
+	
+	<select id="findTeacherByTopicId" parameterType="String" resultMap="teacherId_to_College">
+		select t_teacher.* from t_teacher,t_teacher_topic
+		 where t_teacher.teacherId = t_teacher_topic.teacherId
+		  and t_teacher_topic.topicId = #{topicId}
+	</select>
+	
+	<resultMap type="Teacher" id="teacherId_to_College">
+		<id property="teacherId" column="teacherId"/>
+		<result property="teacherName" column="teacherName"/>
+	</resultMap>
+	
+	<!-- 查找是否提交给开题报告
+	<select id="findIsTopic" parameterType="String" resultType="String">
+		select isTopic from t_student where studentId = #{studentId}
+	</select>  -->
+	<!-- 查找是否提交过开题报告
+	<select id="findIsOpenReport" parameterType="String " resultType="String">
+		select  OpenReport  from t_marke where studentId  = #{studentId} and teacherId = #{teacherId}
+	</select> -->
+
+	<!-- 更新上传完成开题报告
+	<update id="test" parameterType="String">
+		update t_student set isOpenReport = '1' where studentId = #{studentId}
+	</update>-->
+
+	<!-- 将开题报告插入值审批表中
+	<insert id="addOpenReport" parameterType="String"  flushCache="true">
+		insert  into t_marke (teacherId ,studentId ,openReport) values (#{teacherId},#{studentId},"0")
+	</insert> -->
+
+	
+
+	<!-- 查找所有试题 -->
+	<select id ="findTopic" resultType="Topic">
+		select * from t_topic where isSelected = "no"
+	</select>
+	<!-- 查找所有学院 -->
+	<select id="findCollege" resultType="College">
+		select collegeId, collegeName from t_college
+	</select>
+	
+	<!-- 查找所有专业 -->
+	<select id="findMajor" resultType="Major">
+		select * from t_college_major
+	</select>
+	
+</mapper>
