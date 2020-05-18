@@ -1,10 +1,22 @@
 package Gttss.Pojo;
 
-public class MidReport {
+import java.sql.Date;
+
+
+public class MidReport extends BaseReport{
     String Status;
     String studentId;
     String teacherId;
     String fileName;
+    java.sql.Date subTime;
+
+    public void setSubTime(Date subTime) {
+        this.subTime = subTime;
+    }
+
+    public Date getSubTime() {
+        return subTime;
+    }
 
     public void setFileName(String fileName) {
         this.fileName = fileName;
@@ -23,7 +35,6 @@ public class MidReport {
     }
 
     public void setTeacherId(String teacherId) {
-
         this.teacherId = teacherId;
     }
 
@@ -33,7 +44,6 @@ public class MidReport {
     public String getStatus() {
         return Status;
     }
-
     public void setStatus(String status) {
         Status = status;
     }

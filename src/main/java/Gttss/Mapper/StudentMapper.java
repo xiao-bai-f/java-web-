@@ -2,11 +2,13 @@ package Gttss.Mapper;
 
 import Gttss.Pojo.*;
 import org.apache.ibatis.annotations.*;
-
 import java.util.List;
 
 @Mapper
 public interface StudentMapper {
+
+	@Update("update t_student set studentName = #{studentName},studentAge=#{studentAge},studentSex = #{studentSex},studentEmail = #{studentEmail},studentTel = #{studentTel},studentEducation = #{studentEducation},studentAddress = #{studentAddress} where studentId = #{studentId}")
+	public int updateStudentInfo(Student student);
 
 	public List<Major> findMajor();
 
@@ -65,21 +67,20 @@ public interface StudentMapper {
 	@Insert("insert into t_student_topic (studentId,topicId) values (#{studentId},#{topicId})" )
 	public int addStudentTopic(@Param("studentId")String studentId, @Param("topicId")String topicId);
 
-	@Insert("insert  into t_openReport (teacherId ,studentId ,status,name) values (#{teacherId},#{studentId},'0',#{fileName})")
-    public int addOpenReport(@Param("studentId") String studentId, @Param("teacherId") String teacherId,@Param("fileName")String fileName);
+	@Insert("insert  into t_openReport (teacherId ,studentId ,status,fileName,subTime) values (#{teacherId},#{studentId},'0',#{fileName},#{subTime})")
+    public int addOpenReport(BaseReport baseReport);
 
-	@Insert("insert  into t_midReport (teacherId ,studentId ,status,name) values (#{teacherId},#{studentId},'0',#{fileName})")
-	public int addMidReport(@Param("studentId")String studentId, @Param("teacherId") String teacherId,@Param("fileName")String fileName);
+	@Insert("insert  into t_midReport (teacherId ,studentId ,status,fileName,subTime) values (#{teacherId},#{studentId},'0',#{fileName},#{subTime})")
+	public int addMidReport(BaseReport baseReport);
 
-	@Insert("insert  into t_ThesisFirst (teacherId ,studentId ,status,name) values (#{teacherId},#{studentId},'0',#{fileName})")
-	public int addThesisFirst(@Param("studentId")String studentId, @Param("teacherId")String teacherId,@Param("fileName")String fileName);
+	@Insert("insert  into t_thesisFirst (teacherId ,studentId ,status,fileName,subTime) values (#{teacherId},#{studentId},'0',#{fileName},#{subTime})")
+	public int addThesisFirst(BaseReport baseReport);
 
-	@Insert("insert  into t_ThesisSecond (teacherId ,studentId ,status,name) values (#{teacherId},#{studentId},'0',#{fileName})")
-	int addThesisSecond(@Param("studentId")String studentId, @Param("teacherId")String teacherId,@Param("fileName")String fileName);
+	@Insert("insert  into t_thesisSecond (teacherId ,studentId ,status,fileName,subTime) values (#{teacherId},#{studentId},'0',#{fileName},#{subTime})")
+	int addThesisSecond(BaseReport baseReport);
 
-	@Insert("insert  into t_ThesisLast (teacherId ,studentId ,status,name) values (#{teacherId},#{studentId},'0',#{fileName})")
-	int addThesisLast(@Param("studentId")String studentId, @Param("teacherId")String teacherId,@Param("fileName")String fileName);
-
+	@Insert("insert  into t_thesisLast (teacherId ,studentId ,status,fileName,subTime) values (#{teacherId},#{studentId},'0',#{fileName},#{subTime})")
+	int addThesisLast(BaseReport baseReport);
 
 	String findOpenReport(@Param("studentId") String studentId, @Param("teacherId") String teacherId);
 
@@ -138,9 +139,7 @@ public interface StudentMapper {
 
 	List<Classes> findClassByMajorId(@Param("majorId") String majorId);
 
-//	@Update("update t_student set studentName = \"#{studentName}\", studentAge = \"#{studentAge}\",studentSex = \"#{studentSex}\", studentEmail = \"#{studentEmail}\",studentTel = \"#{studentTel}\", studentEducation = \"#{studentEducation}\", studentAddress = \"#{studentAddress}\" where studentId = \"#{studentId}\"")
-	@Update("update t_student set studentName = #{studentName},studentAge=#{studentAge},studentSex = #{studentSex},studentEmail = #{studentEmail},studentTel = #{studentTel},studentEducation = #{studentEducation},studentAddress = #{studentAddress} where studentId = #{studentId}")
-	int updateStudentInfo(Student student);
+
 
 	@Insert("insert into t_student_class (studentId,classId) values (#{studentId},#{classId})")
 	int addStudentClass(@Param("studentId") String studentId,@Param("classId") String classId);
@@ -156,4 +155,45 @@ public interface StudentMapper {
 
 	@Update("update t_studentlogin set studentpassword = #{pwd} where studentId = #{studentId}")
     int UpdateStudentPwd(@Param("pwd") String pwd,@Param("studentId") String studentId);
+
+	@Select("select * from t_messagehistory ")
+	List<Message> findMessageHistory();
+
+	@Insert("insert into t_messagehistory (Sender,Recever,sendTime,message) values (#{sender},#{recever},#{sendtime},#{message})")
+    int addMessage(@Param("sender") String sender, @Param("recever") String recever, @Param("message") String message, @Param("sendtime") String sendtime);
+
+	@Update("update t_messagehistory set isload = #{isload} where 1=1 ")
+	void setLoadMessage(@Param("isload") String islaod);
+
+//	++++++++++++测试+++++++++++++++++
+	public List<Student> test();
+
+	@Select("select * from t_progress where teacherId = #{teacherId}")
+    Progress findProgressByTeacherI(@Param("teacherId") String teacherId);
+
+	@Select("select * from t_plead where teacherId = #{teacherId}")
+    Plead findPleadByTeacherId(@Param("teacherId") String teacherId);
+
+    List<Topic> findTopicByTeacherIdAndTopicId(@Param("teacherId") String teacherId, @Param("topicId") String selectName);
+
+    List<Topic> findTopicByTeacherIdAndTopicName(@Param("teacherId") String teacherId, @Param("selectName") String selectName);
+
+	List<Topic> findTopicIsSelectedByTeacherId(@Param("teacherId") String teacherId,@Param("isSelected") String selectName);
+
+	List<Teacher> findTeacherByCollegeIdAndTeacherName(@Param("collegeId") String collegeId, @Param("selectName") String selectName);
+
+	@Select("select topicId * from t_topic")
+	List<String> findTopicId();
+
+	@Insert("insert into t_approveTopic (topicName,topicRequier,topicDesc,teacherId,teacherName,studentId,approveData) values (#{topicName},#{topicRequier},#{topicDesc},#{teacherId},#{teacherName},#{studentId},#{approveData})")
+	int addApproveTopic(@Param("topicName") String topicName,@Param("topicRequier") String topicRequier,@Param("topicDesc") String topicDesc,@Param("teacherName") String teacherName, @Param("teacherId") String teacherId,@Param("studentId")String studentId, @Param("approveData") java.sql.Date approveData);
+
+	@Select("select * from t_scoring where studentId = #{studentId}")
+	Scoring findScoringByStudentId(@Param("studentId") String studentId);
+
+	@Update("update t_messagehistory set isRead = '1' where Sender = #{sender} and Recever = #{recever}")
+	void updateIsRead(@Param("recever") String recever, @Param("sender") String sender);
+
+	@Select("select count(*) from t_messagehistory where Sender=#{sender} and Recever = #{recever} and isRead='0'")
+	int getNoReadCount(@Param("sender")String sender,@Param("recever") String recever);
 }

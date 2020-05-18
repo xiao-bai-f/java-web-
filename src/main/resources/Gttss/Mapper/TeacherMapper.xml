@@ -32,14 +32,27 @@
     <!-- 插入试题 -->
     <insert id="addTopic" parameterType="Topic" flushCache="true">
     	insert into t_topic
-    		(topicId,topicName,teacherName,topicDesc,topicRequier,schoolId,publishTime)
-    	 	values (#{topicId},#{topicName},#{teacherName},#{topicDesc},#{topicRequier},#{schoolId},#{currentTime})
+    		(topicId,topicName,teacherName,topicDesc,topicRequier,schoolId,publishTime,isSelected)
+    	 	values (#{topicId},#{topicName},#{teacherName},#{topicDesc},#{topicRequier},#{schoolId},#{publishTime},#{isSelected})
     </insert>
-    <insert id="addTeacherTopic" parameterType="Topic" flushCache="true">
+    <insert id="addTeacherTopic" parameterType="String" flushCache="true">
     	insert into t_teacher_topic 
     		(topicId,teacherId,schoolId) 
     		values(#{topicId},#{teacherId},#{schoolId})
     </insert>
+
+    <select id="findTopicByStudentId" parameterType="String" resultMap="topicId_to_teacher">
+		select t_topic.* from t_topic,t_student_topic
+			where t_topic.topicId = t_student_topic.topicId
+				and t_student_topic.studentId = #{studentId}
+	</select>
+
+    <resultMap type="Topic" id="topicId_to_teacher">
+        <id property="topicId" column="topicId"/>
+        <result property="topicName" column="topicName"/>
+        <result property="topicRequier" column="topicRequier"/>
+        <result property="isSelected" column="isSelected"/>
+    </resultMap>
 
     <!-- 查找所有试题 -->
     <select id="findTopicByTeacherId" parameterType="String" resultMap="teacher_to_topic">
@@ -48,7 +61,10 @@
     </select>
    	<resultMap type="Topic" id="teacher_to_topic">
    		<id property="topicId" column="topicId"/>
-   		<result property="topicName" column="topicName"/>
+   		<result property="topicName" column="topicName" />
+   		<result property="topicDesc" column="topicDesc" />
+   		<result property="topicRequier" column="topicRequier"/>
+   		<result property="publishTime" column="publishTime" />
    		<collection property="topicList" ofType="Topic"/>
    	</resultMap>
    	
@@ -120,7 +136,13 @@
     </select>
     <resultMap type="Student" id="topic_to_student">
     	<id property="studentId" column="studentId"/>
-    	<result property="studentName" column="studentName"/>
+    	<id property="studentName" column="studentName"/>
+    	<result property="isTopic" 		column="isTopic" 	/>
+    	<result property="isOpenReport" column="isOpenReport"/>
+    	<result property="isMidReport" 	column="isMidReport" />
+    	<result property="isThesisFirst" 		column="isThesisFirst" 	/>
+    	<result property="isThesisSecond" 		column="isThesisSecond" 	/>
+    	<result property="isThesisLast" 		column="isThesisLast" 	/>
     	<!-- 其他元素待增加 -->
     	<collection property="studentList" ofType="Student"/>
     </resultMap>

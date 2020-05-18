@@ -2,6 +2,7 @@ package Gttss.Pojo;
 
 import java.util.List;
 
+
 public class StudentParent {
     String studentId;
     String studentName;
@@ -12,6 +13,62 @@ public class StudentParent {
     String studentTel;
     String schoolId;
     String studentAddress;
+    String isTopic;
+    String isThesisLast;
+    String isThesisFirst;
+    String isThesisSecond;
+    String isOpenReport;
+    String isMidReport;
+
+    public void setIsTopic(String isTopic) {
+        this.isTopic = isTopic;
+    }
+
+    public void setIsThesisLast(String isThesisLast) {
+        this.isThesisLast = isThesisLast;
+    }
+
+    public void setIsThesisFirst(String isThesisFirst) {
+        this.isThesisFirst = isThesisFirst;
+    }
+
+    public void setIsThesisSecond(String isThesisSecond) {
+        this.isThesisSecond = isThesisSecond;
+    }
+
+    public void setIsOpenReport(String isOpenReport) {
+        this.isOpenReport = isOpenReport;
+    }
+
+    public void setIsMidReport(String isMidReport) {
+        this.isMidReport = isMidReport;
+    }
+
+    public String getIsTopic() {
+        return isTopic;
+    }
+
+    public String getIsThesisLast() {
+        return isThesisLast;
+    }
+
+    public String getIsThesisFirst() {
+        return isThesisFirst;
+    }
+
+    public String getIsThesisSecond() {
+        return isThesisSecond;
+    }
+
+    public String getIsOpenReport() {
+        return isOpenReport;
+    }
+
+    public String getIsMidReport() {
+        return isMidReport;
+    }
+
+
     public String getStudentAge() {
         return studentAge;
     }

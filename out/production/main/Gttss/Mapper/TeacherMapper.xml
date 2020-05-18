@@ -32,8 +32,8 @@
     <!-- 插入试题 -->
     <insert id="addTopic" parameterType="Topic" flushCache="true">
     	insert into t_topic
-    		(topicId,topicName,teacherName,topicDesc,topicRequier,schoolId,publishTime)
-    	 	values (#{topicId},#{topicName},#{teacherName},#{topicDesc},#{topicRequier},#{schoolId},#{currentTime})
+    		(topicId,topicName,teacherName,topicDesc,topicRequier,schoolId,publishTime,isSelected)
+    	 	values (#{topicId},#{topicName},#{teacherName},#{topicDesc},#{topicRequier},#{schoolId},#{publishTime},#{isSelected})
     </insert>
     <insert id="addTeacherTopic" parameterType="Topic" flushCache="true">
     	insert into t_teacher_topic 
@@ -117,6 +117,7 @@
 		select t_student.* from t_student_topic,t_student 
 			where t_student.studentId = t_student_topic.studentId  and t_student_topic.teacherId = #{teacherId}
     </select>
+
     <resultMap type="Student" id="topic_to_student">
     	<id property="studentId" column="studentId"/>
     	<result property="studentName" column="studentName"/>

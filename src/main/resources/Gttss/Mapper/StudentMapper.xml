@@ -3,7 +3,7 @@
 <mapper namespace="Gttss.Mapper.StudentMapper">
 	<!-- 学生登录查询 -->
 	<select id="StudentLogin" parameterType="String" resultType="Student">
-		select * from t_studentlogin 
+		select * from t_studentlogin
 			where studentId = #{studentId} and studentpassword = #{studentPwd} and islogin="no"
 	</select>
 	
@@ -64,6 +64,13 @@
 			where t_teacher.teacherId = t_teacher_college.teacherId
 				and t_teacher_college.collegeId = #{collegeId}
 	</select>
+
+	<select id="findTeacherByCollegeIdAndTeacherName" parameterType="String" resultMap="teacherId_to_topic">
+		select t_teacher.* from t_teacher ,t_teacher_college
+			where t_teacher.teacherId = t_teacher_college.teacherId
+				and t_teacher_college.collegeId = #{collegeId}
+				and t_teacher.teacherName LIKE CONCAT(CONCAT('%',#{selectName}),'%')
+	</select>
 	
 	<resultMap type="Teacher" id="teacherId_to_topic">
 		<id property="teacherId" column="teacherId"/>
@@ -76,7 +83,28 @@
 			where t_topic.topicId = t_teacher_topic.topicId
 				and t_teacher_topic.teacherId = #{teacherId}
 	</select>
-	
+
+	<select id="findTopicByTeacherIdAndTopicId" parameterType="String" resultType="Topic">
+		select t_topic.* from t_topic,t_teacher_topic
+			where t_topic.topicId = t_teacher_topic.topicId
+				and t_teacher_topic.teacherId = #{teacherId}
+				and t_topic.topicId = #{topicId}
+	</select>
+
+	<select id="findTopicByTeacherIdAndTopicName" parameterType="String" resultType="Topic">
+		select t_topic.* from t_topic,t_teacher_topic
+			where t_topic.topicId = t_teacher_topic.topicId
+				and t_teacher_topic.teacherId = #{teacherId}
+				and t_topic.topicName LIKE CONCAT(CONCAT('%',#{selectName}),'%')
+	</select>
+
+	<select id="findTopicIsSelectedByTeacherId" parameterType="String" resultType="Topic">
+		select t_topic.* from t_topic,t_teacher_topic
+			where t_topic.topicId = t_teacher_topic.topicId
+				and t_teacher_topic.teacherId = #{teacherId}
+				and t_topic.isSelected = #{teacherId}
+	</select>
+
 	<select id="findTopicByStudentId" parameterType="String" resultMap="topicId_to_teacher">
 		select t_topic.* from t_topic,t_student_topic
 			where t_topic.topicId = t_student_topic.topicId
@@ -147,15 +175,5 @@
 			and t_class_major.majorId = #{majorId}
 	</select>
 
-	<select id="updateStudentInfo " parameterType="Student" resultType="Integer">
-		update t_student set
-			studentName = #{studentName},
-			studentAge = #{studentAge},
-			studentSex = #{studentSex},
-			studentEmail = #{studentEmail},
-			studentTel = #{studentTel},
-			studentEducation = #{studentEducation},
-			studentAddress = #{studentAddress}
-			where studentId = #{studentId}
-	</select>
+
 </mapper>

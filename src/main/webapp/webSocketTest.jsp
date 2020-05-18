@@ -1,68 +1,80 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE HTML>
+<%@ page language="java" contentType="text/html; charset=UTF-8" isELIgnored="false"
+		 pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>留言系统</title>
+	<title>弹出层</title>
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<script src="webjars/jquery/3.4.1/jquery.min.js"></script>
+	<script src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+		.black_overlay{
+			display: none;
+			position: absolute;
+			top: 0%;
+			left: 0%;
+			width: 100%;
+			height: 100%;
+			background-color: #e2e2e2;
+			z-index:1001;
+			-moz-opacity: 0.8;
+			opacity:.80;
+			filter: alpha(opacity=80);
+		}
+		.white_content {
+			display: none;
+			position: absolute;
+			top: 10%;
+			left: 10%;
+			width: 80%;
+			height: 80%;
+			border: 16px solid lightblue;
+			background-color: white;
+			z-index:1002;
+			overflow: auto;
+		}
+		.white_content_small {
+			display: none;
+			position: absolute;
+			top: 20%;
+			left: 30%;
+			width: 40%;
+			height: 50%;
+			border: 16px solid lightblue;
+			background-color: white;
+			z-index:1002;
+			overflow: auto;
+		}
+	</style>
+	<script type="text/javascript">
+        //弹出隐藏层
+        function ShowDiv(show_div,bg_div){
+            document.getElementById(show_div).style.display='block';
+            document.getElementById(bg_div).style.display='block' ;
+            var bgdiv = document.getElementById(bg_div);
+            bgdiv.style.width = document.body.scrollWidth;
+            // bgdiv.style.height = $(document).height();
+            $("#"+bg_div).height($(document).height());
+        };
+        //关闭弹出层
+        function CloseDiv(show_div,bg_div)
+        {
+            document.getElementById(show_div).style.display='none';
+            document.getElementById(bg_div).style.display='none';
+        }
+	</script>
 </head>
-
 <body>
-	<h1>留言系统</h1>
-	<input id="text" type="text" /><button onclick="send()">Send</button>    <button onclick="closeWebSocket()">Close</button>
-	<div id="message"></div>
+
+<input id="Button1" type="button" value="点击弹出层" onclick="ShowDiv('MyDiv','fade')" />
+<!--弹出层时背景层DIV-->
+<div id="fade" class="black_overlay">
+</div>
+<div id="MyDiv" class="white_content">
+	<div style="text-align: right; cursor: default; height: 40px;">
+		<a href="#" style="font-size: 16px;" onclick="CloseDiv('MyDiv','fade')">关闭</a>
+	</div>
+	<p><strong>helloworld</strong></p>
+</div>
 </body>
-
-
-<script type="text/javascript">
-    var websocket = null;
-
-    //判断当前浏览器是否支持WebSocket
-    if('WebSocket' in window){
-        websocket = new WebSocket("ws://localhost:8080/websocket/2016116106");
-    }
-    else{
-        alert('Not support websocket')
-    }
-
-    //连接发生错误的回调方法
-    websocket.onerror = function(){
-        setMessageInnerHTML("error");
-    };
-
-    //连接成功建立的回调方法
-    websocket.onopen = function(event){
-        setMessageInnerHTML("open");
-    }
-
-    //接收到消息的回调方法
-    websocket.onmessage = function(event){
-        setMessageInnerHTML(event.data);
-    }
-
-    //连接关闭的回调方法
-    websocket.onclose = function(){
-        setMessageInnerHTML("close");
-    }
-
-    //监听窗口关闭事件，当窗口关闭时，主动去关闭websocket连接，防止连接还没断开就关闭窗口，server端会抛异常。
-    window.onbeforeunload = function(){
-        websocket.close();
-    }
-
-    //将消息显示在网页上
-    function setMessageInnerHTML(innerHTML){
-        document.getElementById('message').innerHTML += innerHTML + '<br/>';
-    }
-
-    //关闭连接
-    function closeWebSocket(){
-        websocket.close();
-    }
-
-    //发送消息
-    function send(){
-        var message = document.getElementById('text').value;
-        websocket.send(message);
-    }
-</script>
 </html>

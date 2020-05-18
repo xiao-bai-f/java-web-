@@ -1,7 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="72f9b075-c8d4-40cb-b432-7494e7c78e1a" name="Default" comment="" />
+    <list default="true" id="72f9b075-c8d4-40cb-b432-7494e7c78e1a" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Gttss/Controller/ErrorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Gttss/DefaultView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Gttss/Mapper/MessageMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Gttss/Other/StudentClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Gttss/Other/TeacherClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Gttss/Pojo/ApproveTopic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Gttss/Pojo/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Gttss/Pojo/Plead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Gttss/Pojo/Progress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Gttss/Pojo/Scoring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Gttss/Pojo/SubTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Gttss/SendMessage/StudentMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Gttss/SpringMvcConfigurer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xiaobai/Controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/xiaobai/Pojo/ResultForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Error/error-400.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Error/error-401.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Error/error-403.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Error/error-404.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Error/error-500.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Error/error-503.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Student/ApproveTopic.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Student/downloadFile.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/StudentLogin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Teacher/ApproveTopic.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Teacher/ChangeInfo.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Teacher/ChangePwd.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Teacher/CheckScoring.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Teacher/DownloadFile.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Teacher/Scoring.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Test/test.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/UploadFile/OpenReport/潮州系统结构-1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/UploadFile/ThesisFirst/2016116106刘楚峰.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/css/layui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/key.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/layui/images/person.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_29.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_0_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_0_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gttss.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Gttss.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/Gttss/Mapper/TeacherMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Gttss/Mapper/TeacherMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gttss/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gttss/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gttss/Config/TestDwr.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gttss/Controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gttss/Controller/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gttss/Controller/StudentControllerInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gttss/Controller/TeacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gttss/Controller/TeacherController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gttss/Controller/newStudentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gttss/DwrXml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gttss/DwrXml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gttss/Interceptor/LoginInerceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gttss/Interceptor/LoginInerceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gttss/Interceptor/TeacherInerceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gttss/Interceptor/TeacherInerceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gttss/Mapper/StudentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gttss/Mapper/StudentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gttss/Mapper/TeacherMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gttss/Mapper/TeacherMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gttss/MyWebSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gttss/MyWebSocket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gttss/Pojo/MidReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gttss/Pojo/MidReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gttss/Pojo/OpenReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gttss/Pojo/OpenReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gttss/Pojo/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gttss/Pojo/BaseReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gttss/Pojo/StudentParent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gttss/Pojo/StudentParent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gttss/Pojo/ThesisFirst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gttss/Pojo/ThesisFirst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gttss/Pojo/ThesisLast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gttss/Pojo/ThesisLast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gttss/Pojo/ThesisSecond.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gttss/Pojo/ThesisSecond.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gttss/Pojo/Topic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gttss/Pojo/Topic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gttss/StudentClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gttss/TeacherClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gttss/TeacherMassageController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gttss/TeacherRequest/NewStudentByIndex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gttss/TeacherRequest/StudentByIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gttss/TeacherRequest/StudentByIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gttss/TeacherRequest/TeacherByIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gttss/TeacherRequest/TeacherByIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Gttss/Mapper/StudentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Gttss/Mapper/StudentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Gttss/Mapper/TeacherMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Gttss/Mapper/TeacherMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Student/ChangePwd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Student/ChangePwd.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Student/SelectTopic.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Student/SelectTopic.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Student/SetStudentManager.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Student/ChangeInfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Student/StudentLMessage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Student/StudentLMessage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Student/StudentLogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Student/StudentLogin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Student/StudentMain.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Student/StudentMain.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Student/SubReport.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Student/SubReport.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Student/TeacherMassage.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Teacher/ApprovalFile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Teacher/ApprovalFile.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Teacher/CheckStudent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Teacher/CheckStudent.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Teacher/CheckTopic.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Teacher/CheckTopic.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Teacher/StudentMessage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Teacher/StudentMessage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Teacher/TeacherLogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Teacher/TeacherLogin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Teacher/TeacherMain.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Teacher/TeacherMain.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Teacher/TopicManage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Teacher/TopicManage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/UploadFile/OpenReport/2016491118傻逼仔" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/UploadFile/ThesisFirst/2016116106刘楚峰" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dwr/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/webSocketTest.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/webSocketTest.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Gttss.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gttss/Mapper/StudentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gttss/Mapper/StudentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gttss/Mapper/TeacherMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gttss/Mapper/TeacherMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -11,54 +123,149 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="StudentController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Gttss/Controller/StudentController.java">
+      <file leaf-file-name="ApproveTopic.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/Teacher/ApproveTopic.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+            <state relative-caret-position="1850">
+              <caret line="50" column="43" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="ChangeInfo.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/Teacher/ChangeInfo.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4914">
-              <caret line="126" column="21" selection-start-line="126" selection-start-column="21" selection-end-line="126" selection-end-column="21" />
+            <state relative-caret-position="1776">
+              <caret line="48" column="68" selection-start-line="48" selection-start-column="68" selection-end-line="48" selection-end-column="68" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TeacherMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Gttss/Mapper/TeacherMapper.java">
+      <file leaf-file-name="CheckTopic.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/Teacher/CheckTopic.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+            <state relative-caret-position="3108">
+              <caret line="84" column="16" selection-start-line="84" selection-start-column="15" selection-end-line="84" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DownloadFile.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/Teacher/DownloadFile.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3034">
+              <caret line="82" column="16" selection-start-line="82" selection-start-column="15" selection-end-line="82" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Scoring.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/Teacher/Scoring.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="13690">
+              <caret line="370" column="155" selection-start-line="370" selection-start-column="155" selection-end-line="370" selection-end-column="155" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentMessage.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/Teacher/StudentMessage.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2109">
+              <caret line="57" column="68" selection-start-line="57" selection-start-column="68" selection-end-line="57" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TeacherLogin.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/Teacher/TeacherLogin.jsp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="TeacherMain.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/Teacher/TeacherMain.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4255">
+              <caret line="115" column="27" selection-start-line="115" selection-start-column="27" selection-end-line="115" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TopicManage.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/Teacher/TopicManage.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="74">
+              <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Gttss/AppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StudentLogin.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/Student/StudentLogin.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
+            <state relative-caret-position="148">
+              <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+              <folding>
+                <element signature="e#1309#1310#0" expanded="true" />
+                <element signature="e#1358#1359#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>findTopicName</find>
+      <find>addt</find>
+      <find>findTopicBy</find>
+      <find>findTop</find>
+      <find>type</find>
+      <find>run</find>
+      <find>add</find>
+      <find>findStudentByClassIdAndStudentId</find>
+      <find>findClassByMajorId</find>
+      <find>findTopicByTeacherId</find>
+      <find>AndT</find>
+      <find>LIKE</find>
+      <find>findTopicIsSelectedByTeacherId</find>
+      <find>r</find>
+      <find>topicId</find>
+      <find>findTopicByTeacherIdAndTopicName</find>
+      <find>findClass</find>
+      <find>addTopic</find>
+      <find>start</find>
+      <find>starter</find>
+      <find>findOpenReport</find>
+      <find>Pwd</find>
+      <find>open</find>
+      <find>box</find>
+      <find>alert</find>
+      <find>findMajorByCollegeIdAndMajorName</find>
+      <find>findStudentByIsTopic</find>
+      <find>test</find>
+      <find>试题</find>
+      <find>试</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="projectSyncType">
@@ -71,10 +278,62 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/main/resources/Gttss/Mapper/TeacherMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/Gttss/Mapper/StudentMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Teacher/ApprovelTopic.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/Gttss/TeacherRequest/ApproveTopic.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Gttss/Pojo/ApproveTopic.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Gttss/Pojo/Topic.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/UploadFile/OpenReport/123.txt" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/Student/StudentLogin.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/webSocketTest.jsp" />
+        <option value="$APPLICATION_CONFIG_DIR$/idea64.exe.vmoptions" />
+        <option value="$PROJECT_DIR$/src/main/java/Gttss/Pojo/OpenReport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Gttss/Pojo/BaseReport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Gttss/Pojo/Scoring.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Teacher/ChangePwd.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Student/downlaodFile.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/Gttss/MyWebSocket.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Gttss/Mapper/StudentMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Gttss/SendMessage/StudentMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Gttss/Mapper/TeacherMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Gttss/TeacherRequest/StudentByIndex.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Gttss/Controller/TeacherController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Gttss/TeacherRequest/TeacherByIndex.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Qianduan/Controller/UserController.java" />
+        <option value="$PROJECT_DIR$/XiaoBai-f/src/main/java/Apptest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/xiaobai/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/xiaobai/ResultForm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/xiaobai/Pojo/ResultForm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/xiaobai/Controller/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/xiaobai/Controller/TestController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Test/test.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/Gttss/AppTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Gttss/Controller/StudentController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Student/ApproveTopic.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Student/ChangeInfo.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Student/downloadFile.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Student/SelectTopic.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Student/StudentLMessage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Student/StudentMain.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Student/SubReport.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Teacher/ApprovalFile.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Teacher/ApproveTopic.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Teacher/ChangeInfo.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Teacher/CheckScoring.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Teacher/CheckStudent.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Teacher/CheckTopic.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Teacher/DownloadFile.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Teacher/Scoring.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Teacher/StudentMessage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Teacher/TeacherMain.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Teacher/TopicManage.jsp" />
       </list>
     </option>
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -110,17 +369,18 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="width" value="1836" />
-    <option name="height" value="1068" />
+    <option name="x" value="226" />
+    <option name="y" value="101" />
+    <option name="width" value="1617" />
+    <option name="height" value="1011" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <autoscrollToSource ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -131,59 +391,63 @@
             <path>
               <item name="Gttss" type="b2602c69:ProjectViewProjectNode" />
               <item name="Gttss" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Gttss" type="b2602c69:ProjectViewProjectNode" />
               <item name="Gttss" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Gttss" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Gttss" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Gttss" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Gttss" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Gttss" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Gttss" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Gttss" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Gttss" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Gttss" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JSPX&#10;JSP" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/dubbo-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Gttss" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\eclipse\脚本文件2\Gttss\src\main\webapp\UploadFile\OpenReport" />
+      <recent name="D:\eclipse\脚本文件2\Gttss\src\main\webapp\Error" />
+      <recent name="D:\eclipse\脚本文件2\Gttss\src\main\webapp" />
+      <recent name="D:\软件安装目录\apache-maven-3.5.4\Repositroy\org\webjars\jquery\3.4.1\jquery-3.4.1.jar!\META-INF\resources\webjars\jquery\3.4.1" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+      <recent name="11、" />
+      <recent name="11" />
+      <recent name="Gttss.Pojo" />
+      <recent name="Gttss.TeacherRequest" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\eclipse\脚本文件2\Gttss" />
+      <recent name="D:\eclipse\脚本文件2\Gttss\Gttss" />
+      <recent name="D:\eclipse\脚本文件2\Gttss\src\main\webapp\UploadFile\OpenReport" />
+      <recent name="D:\eclipse\脚本文件2\Gttss\src\main\webapp\UploadFile\ThesisSecond" />
+      <recent name="D:\eclipse\脚本文件2\Gttss\src\main\webapp\layui\css" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -199,11 +463,14 @@
   </component>
   <component name="RunManager">
     <configuration name="AppTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="D:\Jdk1.8\jre" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Gttss.AppTest" />
+      <module name="Gttss" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Gttss.*" />
+          <option name="PATTERN" value="Gttss.SendMessage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -278,194 +545,492 @@
       <workItem from="1586162546743" duration="1385000" />
       <workItem from="1586163965937" duration="949000" />
       <workItem from="1586185616834" duration="70000" />
-      <workItem from="1586225476494" duration="861000" />
+      <workItem from="1586225476494" duration="3475000" />
+      <workItem from="1586394635064" duration="733000" />
+      <workItem from="1586397986697" duration="2181000" />
+      <workItem from="1586400477056" duration="780000" />
+      <workItem from="1586431650332" duration="619000" />
+      <workItem from="1586480635381" duration="18493000" />
+      <workItem from="1586519791736" duration="8000" />
+      <workItem from="1586519812837" duration="9935000" />
+      <workItem from="1586575383853" duration="26894000" />
+      <workItem from="1586658920211" duration="11491000" />
+      <workItem from="1586696642796" duration="6527000" />
+      <workItem from="1586703228254" duration="125000" />
+      <workItem from="1586740552338" duration="52000" />
+      <workItem from="1586751184925" duration="6125000" />
+      <workItem from="1586770179797" duration="1052000" />
+      <workItem from="1586771416246" duration="5807000" />
+      <workItem from="1586784047257" duration="3838000" />
+      <workItem from="1586826196501" duration="1298000" />
+      <workItem from="1586836686794" duration="4164000" />
+      <workItem from="1586856671948" duration="4945000" />
+      <workItem from="1586914034826" duration="15480000" />
+      <workItem from="1586941380407" duration="529000" />
+      <workItem from="1586942427946" duration="2189000" />
+      <workItem from="1586945146184" duration="188000" />
+      <workItem from="1586946167321" duration="950000" />
+      <workItem from="1586997729398" duration="1641000" />
+      <workItem from="1587008858958" duration="258000" />
+      <workItem from="1587009136218" duration="482000" />
+      <workItem from="1587026547150" duration="5197000" />
+      <workItem from="1587032823299" duration="1365000" />
+      <workItem from="1587034571303" duration="5000" />
+      <workItem from="1587034628004" duration="1943000" />
+      <workItem from="1587085338332" duration="1013000" />
+      <workItem from="1587095073887" duration="3105000" />
+      <workItem from="1587106578262" duration="4819000" />
+      <workItem from="1587112345316" duration="1969000" />
+      <workItem from="1587121807928" duration="15615000" />
+      <workItem from="1587171304415" duration="15970000" />
+      <workItem from="1587208114866" duration="11174000" />
+      <workItem from="1587260727273" duration="24423000" />
+      <workItem from="1587346051735" duration="7882000" />
+      <workItem from="1587358310206" duration="12811000" />
+      <workItem from="1587372832722" duration="267000" />
+      <workItem from="1587374002104" duration="9000" />
+      <workItem from="1587374047401" duration="9000" />
+      <workItem from="1587374112159" duration="47000" />
+      <workItem from="1587374409707" duration="32000" />
+      <workItem from="1587374559318" duration="196000" />
+      <workItem from="1587386412346" duration="900000" />
+      <workItem from="1587431038723" duration="2924000" />
+      <workItem from="1587434320262" duration="2491000" />
+      <workItem from="1587466522841" duration="5639000" />
+      <workItem from="1587517636560" duration="29351000" />
+      <workItem from="1587604117489" duration="8907000" />
+      <workItem from="1587640612933" duration="3858000" />
+      <workItem from="1587644746104" duration="14000" />
+      <workItem from="1587644865604" duration="1702000" />
+      <workItem from="1587648257650" duration="3741000" />
+      <workItem from="1587696396478" duration="281000" />
+      <workItem from="1587696723226" duration="244000" />
+      <workItem from="1587698924618" duration="848000" />
+      <workItem from="1587700928791" duration="609000" />
+      <workItem from="1587709985416" duration="313000" />
+      <workItem from="1587710355852" duration="8957000" />
+      <workItem from="1587719912303" duration="192000" />
+      <workItem from="1587775662406" duration="19099000" />
+      <workItem from="1587862985922" duration="1049000" />
+      <workItem from="1587875048687" duration="5722000" />
+      <workItem from="1587889089695" duration="1352000" />
+      <workItem from="1587891503547" duration="338000" />
+      <workItem from="1587902450267" duration="4043000" />
+      <workItem from="1587948604558" duration="304000" />
+      <workItem from="1587959045057" duration="288000" />
+      <workItem from="1587971679942" duration="8374000" />
+      <workItem from="1587991717505" duration="8713000" />
+      <workItem from="1588035967501" duration="5954000" />
+      <workItem from="1588072891518" duration="614000" />
+      <workItem from="1588121608761" duration="22659000" />
+      <workItem from="1588172812990" duration="1193000" />
+      <workItem from="1588208371024" duration="594000" />
+      <workItem from="1588297740602" duration="12275000" />
+      <workItem from="1588388132757" duration="6456000" />
+      <workItem from="1588559675833" duration="2548000" />
+      <workItem from="1588590285946" duration="607000" />
+      <workItem from="1588680551990" duration="1896000" />
+      <workItem from="1588932544643" duration="11000" />
+      <workItem from="1588986859014" duration="105000" />
+      <workItem from="1589036236938" duration="1815000" />
+      <workItem from="1589074252768" duration="1794000" />
+      <workItem from="1589080371151" duration="918000" />
+      <workItem from="1589444742404" duration="72000" />
+      <workItem from="1589645279490" duration="580000" />
+      <workItem from="1589645917979" duration="2151000" />
+      <workItem from="1589788613145" duration="149000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3265000" />
+    <option name="totallyTimeSpent" value="423158000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32897604" />
-      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.21428572" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50053304" side_tool="true" weight="0.26797387" />
+      <window_info anchor="bottom" id="JRebel Console" order="15" sideWeight="0.5021322" side_tool="true" weight="0.25490198" />
+      <window_info anchor="right" id="Maven Projects" order="10" visible="true" weight="0.07356077" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="JRebel Executor" order="14" weight="0.0" />
+      <window_info id="Capture Tool" order="8" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info id="Structure" order="1" sideWeight="0.50320923" side_tool="true" weight="0.17270789" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.24983944" weight="0.23940435" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Java Enterprise" order="7" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.100217864" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info id="Image Layers" order="4" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.19389978" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978678" weight="0.5051546" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.61002177" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24147122" />
-      <window_info anchor="right" id="Bean Validation" order="3" />
-      <window_info id="Web" order="2" side_tool="true" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.44553378" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6012146" visible="true" weight="0.17270789" />
+      <window_info anchor="bottom" id="Problems" order="16" />
+      <window_info anchor="right" id="Bean Validation" order="9" weight="0.32947975" />
+      <window_info id="Web" order="7" sideWeight="0.2398317" side_tool="true" weight="0.16791044" />
+      <window_info id="JRebel" order="3" sideWeight="0.3987854" side_tool="true" weight="0.16570328" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="JRebel Setup Guide" order="5" weight="0.32995737" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="7" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.13113007" />
+      <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.49946696" weight="0.3409586" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4989339" weight="0.4074074" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/Teacher/CheckScoring.jsp</url>
+          <line>85</line>
+          <properties />
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/Teacher/Scoring.jsp</url>
+          <line>85</line>
+          <properties />
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="72" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Gttss/Controller/StudentController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/UploadFile/ThesisFirst/2016116106刘楚峰.docx">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Gttss/Mapper/TeacherMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+        <state relative-caret-position="790">
+          <caret line="82" column="13" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Gttss/TeacherRequest/StudentByIndex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4914">
-          <caret line="126" column="21" selection-start-line="126" selection-start-column="21" selection-end-line="126" selection-end-column="21" />
+        <state relative-caret-position="116">
+          <caret line="263" selection-start-line="263" selection-end-line="263" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Gttss/Mapper/TeacherMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Gttss/Controller/TeacherController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Gttss/AppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Student/StudentLogin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Gttss/Controller/StudentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4914">
-          <caret line="126" column="21" selection-start-line="126" selection-start-column="21" selection-end-line="126" selection-end-column="21" />
+        <state relative-caret-position="306">
+          <caret line="85" column="37" selection-start-line="85" selection-start-column="37" selection-end-line="85" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Gttss/Mapper/TeacherMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        <state relative-caret-position="196">
+          <caret line="18" column="73" lean-forward="true" selection-start-line="18" selection-start-column="73" selection-end-line="18" selection-end-column="73" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Gttss/AppTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Gttss/TeacherRequest/TeacherByIndex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        <state relative-caret-position="-2664">
+          <caret line="322" column="29" lean-forward="true" selection-start-line="322" selection-start-column="29" selection-end-line="322" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Student/StudentLogin.jsp">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/spring/boot/mybatis-spring-boot-autoconfigure/1.1.1/mybatis-spring-boot-autoconfigure-1.1.1.jar!/org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
+        <state relative-caret-position="-3873">
+          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.0/mybatis-3.4.0.jar!/org/apache/ibatis/binding/MapperRegistry.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="19" column="29" lean-forward="true" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Qiandaun.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Qianduan/Controller/UserController.java" />
+    <entry file="file://$PROJECT_DIR$/XiaoBai-f/XiaoBai-ff.iml" />
+    <entry file="file://$PROJECT_DIR$/XiaoBai-f/src/main/java/Controller.java" />
+    <entry file="file://$PROJECT_DIR$/XiaoBai-f/XiaoBai-f.iml" />
+    <entry file="file://$PROJECT_DIR$/XiaoBai-f/src/main/java/Apptest.java" />
+    <entry file="file://$PROJECT_DIR$/XiaoBai-f/src/main/java/Controller/Test.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/webjars/jquery/3.4.1/jquery-3.4.1.jar!/META-INF/resources/webjars/jquery/3.4.1/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/rebel-remote.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Test/test.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.0.5.RELEASE/spring-context-5.0.5.RELEASE.jar!/org/springframework/stereotype/Controller.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/webSocketTest.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2257">
+          <caret line="61" column="60" selection-start-line="61" selection-start-column="60" selection-end-line="61" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/xiaobai/Pojo/ResultForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Gttss/Controller/StudentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        <state relative-caret-position="999">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Gttss/AppTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Student/ApproveTopic.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+        <state relative-caret-position="185">
+          <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Student/StudentLogin.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Student/ChangeInfo.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        <state relative-caret-position="379">
+          <caret line="101" column="56" selection-start-line="101" selection-start-column="56" selection-end-line="101" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Gttss/Mapper/StudentMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Student/ChangePwd.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="12" column="45" lean-forward="true" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+        <state relative-caret-position="-29" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.29/tomcat-embed-core-8.5.29.jar!/javax/servlet/http/HttpServletRequest.class">
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+        <state relative-caret-position="206">
+          <caret line="15870" column="12" selection-start-line="15870" selection-start-column="12" selection-end-line="15870" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Gttss/Mapper/TeacherMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Student/downloadFile.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Gttss/Controller/StudentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+        <state relative-caret-position="231">
+          <caret line="51" column="52" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4914">
-          <caret line="126" column="21" selection-start-line="126" selection-start-column="21" selection-end-line="126" selection-end-column="21" />
+        <state relative-caret-position="370">
+          <caret line="10" selection-start-line="10" selection-end-line="136" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Gttss/AppTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/xiaobai/Controller/TestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        <state relative-caret-position="296">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Student/StudentLMessage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="57" column="56" selection-start-line="57" selection-start-column="56" selection-end-line="57" selection-end-column="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/Student/StudentLogin.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
+        <state relative-caret-position="-29" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Student/StudentMain.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="91" column="89" selection-start-line="91" selection-start-column="89" selection-end-line="91" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Student/SubReport.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="210" column="9" selection-start-line="210" selection-start-column="8" selection-end-line="210" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Student/SelectTopic.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="73" column="23" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Teacher/ApprovalFile.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3811">
+          <caret line="102" column="29" selection-start-line="102" selection-start-column="29" selection-end-line="102" selection-end-column="29" />
+          <caret line="103" column="29" selection-start-line="103" selection-start-column="29" selection-end-line="103" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Teacher/ApproveTopic.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1850">
+          <caret line="50" column="43" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Teacher/ChangeInfo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1776">
+          <caret line="48" column="68" selection-start-line="48" selection-start-column="68" selection-end-line="48" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Teacher/ChangePwd.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29" />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/phrase.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Teacher/CheckScoring.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="191" column="9" selection-start-line="191" selection-start-column="8" selection-end-line="191" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Teacher/CheckStudent.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="93" column="16" selection-start-line="93" selection-start-column="15" selection-end-line="93" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Teacher/CheckTopic.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3108">
+          <caret line="84" column="16" selection-start-line="84" selection-start-column="15" selection-end-line="84" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Teacher/DownloadFile.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3034">
+          <caret line="82" column="16" selection-start-line="82" selection-start-column="15" selection-end-line="82" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Teacher/Scoring.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13690">
+          <caret line="370" column="155" selection-start-line="370" selection-start-column="155" selection-end-line="370" selection-end-column="155" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Teacher/StudentMessage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2109">
+          <caret line="57" column="68" selection-start-line="57" selection-start-column="68" selection-end-line="57" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Teacher/TeacherLogin.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Teacher/TeacherMain.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4255">
+          <caret line="115" column="27" selection-start-line="115" selection-start-column="27" selection-end-line="115" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Teacher/TopicManage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Gttss/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+          <folding>
+            <element signature="e#1309#1310#0" expanded="true" />
+            <element signature="e#1358#1359#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -521,7 +1086,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Gttss</last-edited>
+          <last-edited>XiaoBai-f</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

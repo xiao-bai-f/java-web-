@@ -1,11 +1,19 @@
 package Gttss.Pojo;
 
-public class ThesisSecond {
+public class ThesisSecond extends BaseReport{
     String Status;
     String studentId;
     String teacherId;
     String fileName;
+    java.sql.Date subTime;
 
+    public void setSubTime(java.sql.Date subTime) {
+        this.subTime = subTime;
+    }
+
+    public java.sql.Date getSubTime() {
+        return subTime;
+    }
     public void setFileName(String fileName) {
         this.fileName = fileName;
     }

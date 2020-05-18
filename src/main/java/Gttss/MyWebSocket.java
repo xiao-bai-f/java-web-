@@ -39,7 +39,7 @@ public class MyWebSocket {
      * 连接关闭调用的方法
      */
     @OnClose
-    public void onClose(@PathParam("connect") String connectId,Session session) {
+    public void onClose(@PathParam("connectId") String connectId,Session session) {
         MyWebSocket closewb = webSocketSet.remove(connectId);  //从set中删除
         subOnlineCount();           //在线数减1
         System.out.println("有一连接"+connectId+"关闭！当前在线人数为" + getOnlineCount());
@@ -50,13 +50,23 @@ public class MyWebSocket {
      * @param message 客户端发送过来的消息
      * @throws IOException 
      */
+
     @OnMessage
     public void onMessage(String message,Session session) throws IOException {
-        System.out.println("来自客户端"+connectId+"的消息:" + message);
+        String fromId = "";
+        String messages[] = message.split("://");
+        for (MyWebSocket mwb : webSocketSet.values()) {
+            if(mwb.session.equals(session)){
+                fromId = mwb.connectId;
+                break;
+            }
+        }
+        System.out.println("来自客户端"+connectId+"的消息:" + messages[1]);
         for (MyWebSocket mwb :  webSocketSet.values()) {
-        	if(mwb.connectId.equals("101")) {
-				System.out.println("转发消息至101客户端");
-				sendMessage(mwb.session,message);
+        	if(mwb.connectId.equals(messages[0])) {
+                System.out.println("将消息准发至"+messages[0]);
+				sendMessage(mwb.session,fromId+"://"+messages[1]);
+				break;
 			}
 		}
     }
@@ -70,7 +80,8 @@ public class MyWebSocket {
 			//出现网络问题时
 		}
     }
-    
+
+
     public void sendMessage(String message) throws IOException {
     	this.session.getBasicRemote().sendText(message);//显示在自己界面
     	//转达到学生界面
